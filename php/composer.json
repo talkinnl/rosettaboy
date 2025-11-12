@@ -17,8 +17,8 @@
         "php": "^8.2"
     },
     "require-dev": {
-        "friendsofphp/php-cs-fixer" : "^3.64",
-        "phpstan/phpstan": "^2.0"
+        "friendsofphp/php-cs-fixer" : "^3.89",
+        "phpstan/phpstan": "^2.1"
     },
     "scripts": {
         "check": [
@@ -28,7 +28,7 @@
         "stan": [
             "@analyse"
         ],
-        "format": "PHP_CS_FIXER_IGNORE_ENV=1 php-cs-fixer fix",
+        "format": "php-cs-fixer fix",
         "analyse-ci": "phpstan analyse --error-format=github",
         "analyse": "phpstan analyse --error-format=raw | sed -E 's/:([0-9]+):/:\\1 /'"
     }
